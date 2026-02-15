@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: rgb(1,1,21);
+}
+
+/* Main Layout */
+#main{
+    display: flex;
+    height: 100%;
+}
+
+/* Sidebar */
+.sidebar{
+    width: 200px;
+    background-color: rgb(1,1,21);
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.top-menu h4{
+    margin-top: 40px;
+}
+
+.sidebar h4{
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/* Right Side */
+.right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+.navbar{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search input{
+    padding: 8px 40px;
+    border-radius: 50px;
+    border: 1px solid gray;
+    background: black;
+    color: white;
+}
+
+.search i{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero{
+   padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Card */
+.card{
+      width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+   
+}
+
+.card img{
+ width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+h3{
+    padding: 10px;
+    color: white;
+}
